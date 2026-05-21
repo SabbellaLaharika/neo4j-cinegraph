@@ -1,0 +1,2 @@
+MATCH (p:Person {name: 'Keanu Reeves'})-[:ACTED_IN]->(m:Movie)
+RETURN m.title;
