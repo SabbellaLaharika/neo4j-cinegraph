@@ -8,6 +8,22 @@ This project demonstrates the creation and management of a containerized movie k
 - **Automated Seeding**: Initializes the database with constraints, nodes (Movie, Person, Genre), and relationships on the first startup.
 - **Cypher Queries**: A collection of scripts for interacting with the graph database.
 
+## Architecture
+
+```mermaid
+graph TD
+    User[You, the Developer] -->|Interacts with| Browser[Neo4j Browser<br/>localhost:7474]
+    Browser -->|Sends Cypher queries via Bolt protocol| Container[Neo4j Docker Container]
+    
+    subgraph Docker Environment
+        Container
+    end
+    
+    Container -->|Persists data to| DataVol[./data Volume]
+    Container -->|Writes logs to| LogsVol[./logs Volume]
+    Container -->|On initial startup, executes| InitScript[./init/seed.cypher]
+```
+
 ## Prerequisites
 
 - [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) installed on your machine.
