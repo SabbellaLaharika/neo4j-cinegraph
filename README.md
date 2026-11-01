@@ -9,6 +9,12 @@ An enterprise-grade, containerized **Movie Knowledge Graph** built using **Neo4j
 
 ---
 
+## 🎥 Project Demo
+
+[![Watch the Movie Knowledge Graph demo on YouTube](https://img.youtube.com/vi/1A7mO2Fvii4/hqdefault.jpg)](https://youtu.be/1A7mO2Fvii4)
+
+---
+
 ## 📐 System Architecture & Flow
 
 The application runs as an isolated microservice environment managed by Docker Compose. The persistent storage volumes, logs, and database startup seed scripts are seamlessly bound from the host environment to the containerized Neo4j database instance.
