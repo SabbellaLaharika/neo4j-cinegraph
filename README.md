@@ -11,7 +11,7 @@ An enterprise-grade, containerized **Movie Knowledge Graph** built using **Neo4j
 
 ## 🎥 Project Demo
 
-[![Watch the Movie Knowledge Graph demo on YouTube](https://img.youtube.com/vi/1A7mO2Fvii4/hqdefault.jpg)](https://youtu.be/1A7mO2Fvii4)
+[![Watch the Movie Knowledge Graph demo on YouTube](https://img.youtube.com/vi/1A7mO2Fvii4/maxresdefault.jpg)](https://youtu.be/1A7mO2Fvii4)
 
 ---
 
